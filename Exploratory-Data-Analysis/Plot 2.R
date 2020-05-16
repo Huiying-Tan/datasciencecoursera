@@ -10,7 +10,7 @@ data$Global_active_power<-as.numeric(data$Global_active_power)
 #1000
 data_filtered<-filter(data, Date >="2007/02/01" & Date <= "2007/02/02")
 data_filtered$Global_active_power<-as.numeric(data_filtered$Global_active_power)
-data_filtered$Wkday<-weekdays(data_filtered$Date,abbreviate = T)
+
 data_filtered$datetime <- strptime(paste(data_filtered$Date, data_filtered$Time, sep=" "), "%Y-%m-%d %H:%M:%S") 
 
 png("plot2.png", width=480, height=480)

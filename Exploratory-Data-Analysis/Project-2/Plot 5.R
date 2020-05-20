@@ -1,8 +1,12 @@
 #Across the United States, how have emissions from coal combustion-related sources 
 #changed from 1999–2008?
+url<-"https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
+#?download.file
+download.file(url, destfile="Data_for_peer_assessment.zip")
 
-getwd()
-setwd("C:/Users/Hui Ying/Documents/datasciencecoursera/Exploratory-Data-Analysis/Project-2")
+#unzip
+unzip("Data_for_peer_assessment.zip")
+
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
 #join NEI and SCC

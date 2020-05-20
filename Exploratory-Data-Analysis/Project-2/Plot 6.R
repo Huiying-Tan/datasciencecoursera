@@ -2,6 +2,12 @@
 #Use the ggplot2 plotting system to make a plot answer this question.
 library(ggplot2)
 library(dplyr)
+url<-"https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
+#?download.file
+download.file(url, destfile="Data_for_peer_assessment.zip")
+
+#unzip
+unzip("Data_for_peer_assessment.zip")
 
 
 #read files

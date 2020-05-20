@@ -7,7 +7,7 @@ download.file(url, destfile="Data_for_peer_assessment.zip")
 
 #unzip
 unzip("Data_for_peer_assessment.zip")
-names(NEI)
+
 
 #read files
 
